@@ -26,6 +26,6 @@ gulp.task("assets", function () {
 });
 
 // The default task which runs at start of the gulpfile.js
-gulp.task("default", gulp.series("build-clean", "typescript", "views", "assets"), () => {
+gulp.task("default", gulp.series("typescript", "views", "assets"), () => {
   console.log("Done");
 });

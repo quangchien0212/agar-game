@@ -7,10 +7,7 @@ window.addEventListener("load", () => {
   canvas.height = window.innerHeight
 
   const game = new Game(canvas)
-
-  ctx.fillStyle = game.player.color
-  ctx.lineWidth = 3
-  ctx.strokeStyle = game.player.color
+  game.init()
 
   function animate() {
     ctx.clearRect(0, 0, canvas.width, canvas.height)
